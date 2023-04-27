@@ -21,7 +21,7 @@ describe("search function", () => {
     const resultUndefined = search(undefined, dbMock);
     // @ts-ignore
     const resultNull = search(null, dbMock);
-    const expected = [];
+    const expected: Array<any> = [];
     expect(resultUndefined).toStrictEqual(expected);
     expect(resultNull).toStrictEqual(expected);
   });
